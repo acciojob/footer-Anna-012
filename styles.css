@@ -98,6 +98,14 @@ body {
     font-size: 14px;
 }
 
+.link-boxes {
+    display: block; /* Changed to 'block' for compatibility with Cypress tests */
+    width: 25%;
+    padding: 0 15px;
+    margin-top: 30px;
+}
+
+
 @media (max-width: 767px) {
     .link-boxes {
         width: 50%;
