@@ -1,41 +1,42 @@
-/* your code here */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;700&display=swap');
 
-body{
+body {
     line-height: 1.5;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-*{
-    margin: 0px;
-    padding: 0px;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.link-boxes{
+.content {
     max-width: 1170px;
     /* background-color: red; */
     margin: auto;
 }
 
-.row{
+.top {
     display: flex;
     flex-wrap: wrap;
 }
 
-ul{
+ul {
     list-style: none;
 }
-.footer{
+
+.footer {
     background-color: #24262b;
     padding: 70px 0;
 }
 
-.footer-col{
+.link-boxes {
     width: 25%;
     padding: 0 15px;
 }
 
-.footer-col h4{
+.link-boxes h4 {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
@@ -44,64 +45,64 @@ ul{
     position: relative;
 }
 
-.footer-col h4::before{
+.link-boxes h4::before {
     content: '';
     position: absolute;
     left: 0;
     bottom: -10px;
     background-color: #e91e63;
     height: 2px;
-    box-sizing: border-box;
     width: 50px;
 }
 
-.footer-col ul li:not(:last-child){
+.link-boxes ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.footer-col ul li a{
+.link-boxes ul li a {
     font-size: 16px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: #bbbbbb;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
     display: block;
     transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover{
-    color:#ffffff;
-    padding-left : 8px;
+.link-boxes ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
 }
 
-.footer-col .media-icons a{
+/* Moved .media-icons a styles outside .link-boxes */
+.media-icons a {
     display: inline-block;
     height: 40px;
-    width:40px;
-    background-color: rgba(255,255,255,0.2);
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
-    border-radius: 50px;
+    border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
 }
 
-.footer-col .media-icons a:hover{
+.media-icons a:hover {
     color: #24262b;
     background-color: #ffffff;
 }
 
-@media(max-width:767px){
-    .footer-col{
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .link-boxes {
         width: 50%;
         margin-bottom: 30px;
     }
 }
 
-@media(max-width: 574px){
-    .footer-col{
+@media (max-width: 574px) {
+    .link-boxes {
         width: 100%;
     }
 }
